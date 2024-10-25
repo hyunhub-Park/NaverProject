@@ -1,0 +1,154 @@
+/* border-box로 전체 설정 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+li {
+  width: 180px;
+}
+input[type="checkbox"] {
+  /* 기본 체크박스 숨기기 */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(143, 143, 143);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4caf50; /* 체크 시 배경색 */
+  border-color: #4caf50;
+}
+
+input[type="checkbox"]:checked::after {
+  /* 체크된 상태의 표시 */
+  content: "✓";
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: -2px;
+  left: 4px;
+}
+/* 앵커 타입은 기본적으로 부모객체의 속성 계승 */
+a {
+  text-decoration: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+/* header  로고, 언어선택부분*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 40px 0px 40px;
+}
+header div.logo {
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+header div.len {
+  align-self: flex-end;
+  padding: 4px 10px 6px 8px;
+}
+header div.len select {
+  padding: 4px 10px 6px 8px;
+  text-align: center;
+}
+/* main의 로그인 방법선택부분 */
+
+main section.login article.choice ul {
+  font-size: 16px;
+}
+main section.login article.choice ul li {
+  border: 1px solid rgb(225, 227, 229);
+  padding: 17px 30px 5px 30px;
+  border-radius: 12px;
+  background-color: rgb(245, 246, 247);
+  border-collapse: collapse;
+}
+
+main section.login article.choice ul li:nth-child(1) {
+  position: relative;
+  border-bottom: none;
+  background-color: white;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 12px;
+  margin-right: -1px;
+}
+main section.login article.choice ul li:nth-child(1) i {
+  color: rgb(55, 186, 123);
+}
+main section.login article.choice ul li:nth-child(2) {
+  border-radius: 12px 0 0 12px;
+  position: relative;
+  margin-right: -1px;
+  color: rgb(143, 143, 143);
+}
+main section.login article.choice ul li:nth-child(3) {
+  border-radius: 0 12px 0 0;
+  color: rgb(143, 143, 143);
+}
+/* 로그인 정보 입력부분 */
+main section.login article.input {
+  position: relative;
+  bottom: 10px;
+  border: 1px solid rgb(225, 227, 229);
+  border-top: none;
+  width: 538px;
+  height: 296px;
+  justify-self: center;
+  padding: -5px;
+  border-radius: 0 0 12px 12px;
+  padding: 24px;
+}
+main section.login article.input ul {
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(225, 227, 229);
+  border-radius: 12px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+main section.login article.input ul li:nth-child(1) {
+  height: 60px;
+  width: 488px;
+}
+main section.login article.input ul li:nth-child(2) {
+  height: 59px;
+  width: 488px;
+  border-top: 1px solid rgb(225, 227, 229);
+}
+main section.login article.input ul li input {
+  text-align: start;
+  border: none;
+  height: 50px;
+  width: 480px;
+  font-size: 16px;
+  color: rgb(158, 158, 158);
+}
+/* 로그인 정보 입력중 상태유지 버튼 */
+main section.login article.input div.maint {
+  text-align: start;
+  color: rgb(158, 158, 158);
+  margin-bottom: 15px;
+}
+/* 로그인 정보 로그인 버튼 */
+main section.login article.input button {
+  width: 488px;
+  height: 50px;
+  border: none;
+  background-color: rgb(9, 170, 92);
+  color: white;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+}
