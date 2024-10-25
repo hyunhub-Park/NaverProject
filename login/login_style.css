@@ -10,10 +10,7 @@ ul {
   display: flex;
   justify-content: center;
 }
-li {
-  width: 180px;
-}
-input[type="checkbox"] {
+li input[type="checkbox"] {
   /* 기본 체크박스 숨기기 */
   appearance: none;
   width: 20px;
@@ -38,6 +35,7 @@ input[type="checkbox"]:checked::after {
   top: -2px;
   left: 4px;
 }
+
 /* 앵커 타입은 기본적으로 부모객체의 속성 계승 */
 a {
   text-decoration: inherit;
@@ -62,6 +60,7 @@ header div.len {
 header div.len select {
   padding: 4px 10px 6px 8px;
   text-align: center;
+  border: 1px solid rgb(178, 178, 178);
 }
 /* main의 로그인 방법선택부분 */
 
@@ -74,6 +73,7 @@ main section.login article.choice ul li {
   border-radius: 12px;
   background-color: rgb(245, 246, 247);
   border-collapse: collapse;
+  width: 180px;
 }
 
 main section.login article.choice ul li:nth-child(1) {
@@ -151,4 +151,17 @@ main section.login article.input button {
   border-radius: 12px;
   font-size: 17px;
   font-weight: bold;
+}
+/* main_nav 로그인 버튼 하단 찾기, 회원가입  */
+main nav.main_nav {
+}
+main nav.main_nav ul {
+  font-size: 14px;
+  color: rgb(143, 143, 143);
+  justify-content: center;
+}
+main nav.main_nav ul li {
+  margin-right: 20px;
+  padding: 10px;
+  border-right: 1px solid rgb(143, 143, 143);
 }
