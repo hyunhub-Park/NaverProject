@@ -128,16 +128,17 @@ main section.nav div.section0_right ul li {
 main section.nav div.section0_right ul li:nth-last-of-type(1) {
   border-right: none;
 }
-/* 메인 섹션 1, 2, 3  */
+/* 메인 섹션 section1, 2, 3  */
 main section.container {
   display: flex;
 }
-/* 메인섹션 1  왼쪽 부분*/
+/* 메인섹션 section1  왼쪽 부분*/
 main section.container section.section1 {
   display: flex;
   flex-direction: column;
 }
-main section.container section.section1 div {
+/* section1 article 들 일괄설정 */
+main section.container section.section1 article {
   border: 1px solid rgb(241, 243, 245);
   background-color: rgb(255, 255, 255);
   width: 388.5px;
@@ -146,15 +147,49 @@ main section.container section.section1 div {
   font-size: 15px;
   margin-bottom: 10px;
 }
-/* 메인섹션 1  */
-main section.container section.section1 div.head {
+/* section1 article.head 상단 헤드 언론사편집 설정  */
+main section.container section.section1 article.head {
   display: flex;
   justify-content: space-between;
 }
-main section.container section.section1 div.head a {
+main section.container section.section1 article.head a {
   font-size: 12px;
   color: rgb(118, 118, 120);
 }
-
+/* section1 article.news 상단 헤드 언론사편집 설정  */
+main section.container section.section1 article.news {
+  position: relative;
+  display: flex;
+}
+main section.container section.section1 article.news div * {
+  margin-right: 8px;
+}
+main section.container section.section1 article.news div.news_head img {
+  width: 30px;
+  border: 1px solid rgb(130, 134, 145);
+  border-radius: 50%;
+  padding: 2px;
+}
+main section.container section.section1 article.news div span {
+  position: relative;
+  bottom: 7px;
+}
+main section.container section.section1 article.news div span.head {
+  font-weight: bold;
+}
+main section.container section.section1 article.news div span.date {
+  font-size: 13px;
+  color: rgb(130, 134, 145);
+}
+main section.container section.section1 article.news div a.subs {
+  position: absolute;
+  right: 15px;
+  border: 1px solid rgb(73, 120, 244);
+  border-radius: 5px;
+  color: rgb(73, 120, 244);
+  padding: 4px 7px;
+  justify-self: right;
+}
+/*  */
 /* 사이드 스타일 */
 /* 하단부 스타일 */
