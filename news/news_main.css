@@ -132,7 +132,7 @@ main section.nav div.section0_right ul li:nth-last-of-type(1) {
 main section.container {
   display: flex;
 }
-/* 메인섹션 1 */
+/* 메인섹션 1  왼쪽 부분*/
 main section.container section.section1 {
   display: flex;
   flex-direction: column;
@@ -146,6 +146,7 @@ main section.container section.section1 div {
   font-size: 15px;
   margin-bottom: 10px;
 }
+/* 메인섹션 1  */
 main section.container section.section1 div.head {
   display: flex;
   justify-content: space-between;
