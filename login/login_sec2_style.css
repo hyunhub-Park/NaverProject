@@ -91,12 +91,16 @@ main section.login article.choice ul li {
 }
 
 main section.login article.choice ul li:nth-child(1) {
-  border-radius: 12px 12px 12px 0;
+  border-radius: 12px 12px 0px 0;
   position: relative;
   margin-right: -1px;
   color: rgb(143, 143, 143);
 }
 main section.login article.choice ul li:nth-child(2) {
+  border-radius: 12px 12px 12px 0px;
+  color: rgb(143, 143, 143);
+}
+main section.login article.choice ul li:nth-child(3) {
   position: relative;
   border-bottom: none;
   background-color: white;
@@ -104,12 +108,8 @@ main section.login article.choice ul li:nth-child(2) {
   margin-bottom: 12px;
   margin-right: -1px;
 }
-main section.login article.choice ul li:nth-child(2) i {
+main section.login article.choice ul li:nth-child(3) i {
   color: rgb(55, 186, 123);
-}
-main section.login article.choice ul li:nth-child(3) {
-  border-radius: 12px 12px 0 12px;
-  color: rgb(143, 143, 143);
 }
 /* 로그인 정보 입력부분 */
 main section.login article.input {
