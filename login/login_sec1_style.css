@@ -91,6 +91,12 @@ main section.login article.choice ul li {
 }
 
 main section.login article.choice ul li:nth-child(1) {
+  border-radius: 12px 12px 12px 0;
+  position: relative;
+  margin-right: -1px;
+  color: rgb(143, 143, 143);
+}
+main section.login article.choice ul li:nth-child(2) {
   position: relative;
   border-bottom: none;
   background-color: white;
@@ -98,17 +104,11 @@ main section.login article.choice ul li:nth-child(1) {
   margin-bottom: 12px;
   margin-right: -1px;
 }
-main section.login article.choice ul li:nth-child(1) i {
+main section.login article.choice ul li:nth-child(2) i {
   color: rgb(55, 186, 123);
 }
-main section.login article.choice ul li:nth-child(2) {
-  border-radius: 12px 0 0 12px;
-  position: relative;
-  margin-right: -1px;
-  color: rgb(143, 143, 143);
-}
 main section.login article.choice ul li:nth-child(3) {
-  border-radius: 0 12px 0 0;
+  border-radius: 12px 12px 0 12px;
   color: rgb(143, 143, 143);
 }
 /* 로그인 정보 입력부분 */
@@ -124,41 +124,34 @@ main section.login article.input {
   border-radius: 0 0 12px 12px;
   padding: 24px;
 }
-main section.login article.input ul {
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid rgb(225, 227, 229);
-  border-radius: 12px;
-  line-height: 60px;
-  margin-bottom: 15px;
+/* 로그인 정보 입력부분 설명부 */
+main section.login article.input div.int {
+  margin: 30px 0 28px 0;
 }
-main section.login article.input ul li:nth-child(1) {
-  height: 60px;
-  width: 458px;
+main section.login article.input div.int span.green {
+  color: rgb(9, 170, 92);
+  font-size: 15px;
 }
-main section.login article.input ul li:nth-child(2) {
-  height: 59px;
-  width: 458px;
-  border-top: 1px solid rgb(225, 227, 229);
+main section.login article.input div.int span.qu {
+  display: inline-block;
+  font-size: 10px;
+  background-color: rgb(143, 143, 143);
+  border-radius: 50%;
+  width: 13px;
+  color: white;
 }
-main section.login article.input ul li input {
+/* 로그인 정보 입력부분 인증번호 입력 */
+main section.login article.input input[type="text"] {
   text-align: start;
-  border: none;
+  border: 1px solid rgb(178, 178, 178);
   height: 50px;
-  width: 450px;
+  width: 458px;
   font-size: 16px;
+  padding: 5px;
   color: rgb(158, 158, 158);
-}
-/* 로그인 정보 입력중 상태유지 버튼 */
-main section.login article.input div.maint {
-  text-align: start;
-  color: rgb(143, 143, 143);
-  margin-bottom: 15px;
-}
-main section.login article.input div.maint label {
-  position: relative;
-  bottom: 4px;
-  font-size: 14px;
+  margin-bottom: 4.5px;
+  border-radius: 8px;
+  text-align: center;
 }
 /* 로그인 정보 로그인 버튼 */
 main section.login article.input button {

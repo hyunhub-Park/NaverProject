@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="login_style.css" />
+    <link rel="stylesheet" href="login_sec1_style.css" />
     <script src="login_js.js"></script>
     <script
       src="https://kit.fontawesome.com/6ff644124c.js"
@@ -31,13 +31,13 @@
         <article class="choice">
           <ul>
             <li>
-              <a href="#"
+              <a href="./login.html"
                 ><i class="fa-solid fa-arrow-right-to-bracket"></i>
                 ID/전화번호</a
               >
             </li>
             <li>
-              <a href="./login_sec1.html"
+              <a href="#"
                 ><i class="fa-regular fa-square-check"></i> 일회용 번호</a
               >
             </li>
@@ -50,30 +50,24 @@
         </article>
         <!-- 로그인 입력창 -->
         <article class="input">
+          <div class="int">
+            네이버앱의
+            <span class="green"
+              >메뉴 > 설정 <i class="fa-solid fa-gear"></i> > 로그인 아이디 관리
+              ><br />
+              더보기 > 일회용 로그인 번호</span
+            >에 보이는 번호를 입력해 주세요. <br />
+            <span class="qu">
+              <i class="fa-solid fa-question"></i>
+            </span>
+          </div>
           <form action="#" method="post">
-            <ul>
-              <li>
-                <input
-                  type="text"
-                  name="id"
-                  id="id"
-                  placeholder="아이디 또는 전화번호"
-                />
-              </li>
-              <li>
-                <input
-                  type="password"
-                  name="psw"
-                  id="psw"
-                  placeholder="비밀번호"
-                />
-              </li>
-            </ul>
-            <!-- 상태유지 -->
-            <div class="maint">
-              <input type="checkbox" name="maint" id="maint" />
-              <label for="maint">로그인 상태 유지</label>
-            </div>
+            <input
+              type="text"
+              name="num"
+              id="num"
+              placeholder="번호를 입력하세요"
+            />
             <!-- 로그인 버튼 -->
             <button type="submit">로그인</button>
           </form>
