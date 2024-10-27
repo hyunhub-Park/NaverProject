@@ -1,0 +1,1152 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin-left: 30px;
+}
+
+div.head_area
+{
+    width: 100%;
+}
+
+.head_search_bar #search    /*검색창.*/
+{
+    border: 2px solid #03c75a;
+    border-radius: 50px;
+    font-size: 15pt;
+    /*position: relative;
+    display: flex;
+    justify-content: center;*/
+    width: 700px;
+    height: 58px;
+    padding: 20px;
+    margin: 50px auto 10px 300px;
+}
+
+.head_left_icons ul /*검색창 좌측 상단 아이콘.*/
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.head_left_icons_ul i   /*검색창 좌측 상단 메뉴바 아이콘.*/
+{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.head_left_icons_ul i:hover /*검색창 좌측 상단 메뉴바 아이콘 hover적용.*/
+{
+    width: auto;
+    height: auto;
+    background-color: #e3e5e8;
+    border-radius: 50%;
+}
+.head_left_icons img    /*검색창 좌측 상단 네이버페이 아이콘.*/
+{
+    margin: 2px;
+}
+
+.head_left_icons img:hover
+{
+    width: auto;
+    height: auto;
+}
+
+.head_nav_icons_ul  /*메일, 카페, 블로그, 쇼핑... 아이콘*/
+{
+    width: 1300px;  /*화면 크기에 따른 아이콘 고정.*/
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.head_nav_icons_ul a:hover  /*메일, 카페, 블로그, 쇼핑... 아이콘 hover효과 적용*/
+{
+    width: 200px;
+    height: 25px;
+    background-color: #e3e5e8;
+    border-radius: 10px;
+}
+
+
+.head_right_icons ul    /*검색창 우측 상단 아이콘.*/
+{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 1120px;
+}
+
+.head_right_icons_ul i  /*검색창 우측 상단 아이콘.*/
+{
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.head_right_icons_ul i:hover    /*검색창 우측 상단 아이콘 hover적용.*/
+{
+    width: auto;
+    height: auto;
+    background-color: #e3e5e8;
+    border-radius: 50%;
+}
+
+.body_left_1 #body_left_1_banner    /*배너광고*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 830px;
+}
+
+.div_body_left_2    /*body_left_2 전체 창.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 830px;
+    margin-top: 10px;
+}
+
+.body_left_2_news_menu /*뉴스스탠드, 언론사편집, 엔터, 스포츠, 경제, 쇼핑투데이*/
+{
+    display: flex;
+    list-style: none;
+    margin: 20px 10px auto;
+}
+
+.body_left_2_news_menu li,
+.body_left_2_news_menu li a
+{
+    text-decoration-line: none;
+    color: #838383;
+    margin: 5px;
+}
+
+.body_left_2_news_menu li a:hover   /*뉴스스탠드, 언론사편집... hover효과 적용.*/
+{
+    text-decoration: underline;
+    color: black;
+}
+
+
+.body_left_2_category /*네이버TV, 시리즈온, VIBE*/
+{
+    list-style: none;
+    color: #404040;
+    background-color: #f5f7f8;
+    padding: 12px 20px; /*사이즈 네이버 참고.*/
+    border-radius: 4px; /*사이즈 네이버 참고.*/
+    display: flex;
+    margin: 10px 20px auto; /*앵커가 없으므로, 뉴스스탠드와 동일한 공간을 주려면 값을 더 줘야 함.*/
+}
+
+.body_left_2_category li    /*네이버TV, 시리즈온, VIBE*/
+{
+    margin: 5px;
+}
+
+.body_left_2_article_row1   /*body_left_2의 row1 가을준비는 엘리시아에서!*/
+{
+    list-style: none;
+    display: flex;
+    margin: 20px 15px 20px 15px;
+}
+
+.body_left_2_article_row1 a,    /*가을준비는 엘리시아에서! 언더라인 제거.*/
+.body_left_2_article_row2 a
+{
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+}
+
+.body_left_2_article_row1 a:hover,  /*가을준비는 엘리시아에서! hover효과 적용.*/
+.body_left_2_article_row2 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_2_article_row1 img,   /*body_left_2의 row1, row2 이미지.*/
+.body_left_2_article_row2 img
+{
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.body_left_2_article_row1 img:hover,   /*body_left_2의 row1, row2 이미지 hover효과 적용.*/
+.body_left_2_article_row2 img:hover
+{
+    height: 103px;
+}
+
+.body_left_2_article_row2
+{
+    list-style: none;
+    display: flex;
+    margin: 0px 15px 15px 15px;
+}
+
+.div_body_left_2 hr /*언론사 더보기 윗줄*/
+{
+    height: 1px;
+    background-color: #e3e5e8;
+    border: 0px;
+}
+
+#body_left_2_bottom /*언론사 더보기.*/
+{
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*line-height: 25px;*/
+    color: #606060;
+    margin: 10px;
+}
+
+.div_aside_body_left_3  /*body_left_3의 전체 창.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 830px;
+    margin-top: 15px;
+}
+
+.body_left_3_shopping_menu  /*쇼핑/맨즈/원쁠딜/쇼핑라이브*/
+{
+    margin: 20px 10px auto;
+    list-style: none;
+    display: flex;
+}
+
+.body_left_3_shopping_menu li,  /*쇼핑/맨즈/원쁠딜/쇼핑라이브*/
+.body_left_3_shopping_menu a
+{
+    color: #838383;
+    list-style: none;
+    text-decoration-line: none;
+    margin: 3px;
+}
+
+.body_left_3_shopping_menu a:hover
+{
+    text-decoration: underline;
+    color: black;
+    margin: 3px;
+}
+
+#body_left_3_shoppingmall_list  /*쿠팡/지마켓/옥션/SSG닷컴 등*/
+{
+    background-color: #e3e5e8;
+    border-radius: 3px;
+    margin: 15px;
+    width: 300px;
+    height: 90px;
+}
+
+.body_left_3_1_1, /*쿠팡/지마켓/옥션/SSG닷컴 등*/
+.body_left_3_1_2,
+.body_left_3_1_3
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body_left_3_1_1 li, /*쿠팡/지마켓/옥션/SSG닷컴 등*/
+.body_left_3_1_2 li,
+.body_left_3_1_3 li
+{ /*점 회색으로 변경해주기.*/
+    display: flex;
+    font-size: 10pt;
+    margin: 2.5px;
+}
+
+.body_left_3_1_1 a, /*쿠팡/지마켓/옥션/SSG닷컴 등*/
+.body_left_3_1_2 a,
+.body_left_3_1_3 a
+{
+    margin-top: 5px;
+    color: black;
+    text-decoration-line: none;
+}
+
+.body_left_3_1_1 a:hover,
+.body_left_3_1_2 a:hover,
+.body_left_3_1_3 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+#body_left_3_2  /*쇼핑MY/리뷰적립/주문/장바구니*/
+{
+    margin: 0px 12px 10px;
+}
+
+#body_left_3_2 img
+{
+    width: 305px;
+
+}
+
+.body_left_3_3 /*웨스턴부츠 광고*/
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.body_left_3_3 img  /*웨스턴부츠 광고*/
+{
+    width: 300px;
+    border: 1px solid #f5f7f8;
+    border-radius: 3px;
+}
+
+.body_left_3_3 #boots   /*웨스턴부츠 광고*/
+{
+    margin-left: 10px;
+}
+
+.body_left_3_3 a    /*쌀쌀해지는 날씨 데일리 인기부츠!*/
+{
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.body_left_3_3 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_3_4_row1,
+.body_left_3_4_row2
+{
+    list-style: none;
+    display: flex;
+    margin: 20px 0px 0px 10px;
+    
+}
+
+.body_left_3_4_row1 a,
+.body_left_3_4_row2 a
+{
+    color: black;
+}
+
+.body_left_3_4_row1 a:hover,
+.body_left_3_4_row2 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_3_4_row1 img,
+.body_left_3_4_row2 img
+{
+    width: 105px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.body_left_3_4_row1 img:hover,
+.body_left_3_4_row2 img:hover
+{
+    height: 133px;
+}
+
+.body_left_3_4_row1 a,
+.body_left_3_4_row2 a
+{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.merge_body_left_3
+{
+    display: flex;
+}
+
+
+.body_left_3_5  /*오늘의 혜택*/
+{
+    font-weight: bold;
+    list-style: none;
+    background-color: #f5f7f8;
+    display: flex;
+    margin: 20px 10px auto;
+    padding: 12px 20px; /*사이즈 네이버 참고.*/
+    border-radius: 4px; /*사이즈 네이버 참고.*/
+}
+
+.body_left_3_5 a    /*속보! 사뿐, 슈펜...*/
+{
+    font-weight: 200;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.body_left_3_5 a:hover
+{
+    text-decoration: underline;
+}
+
+.div_aside_body_left_3 hr /*쇼핑아이템 더보기 윗줄*/
+{
+    height: 1px;
+    background-color: #e3e5e8;
+    border: 0px;
+    margin-top: 20px;
+}
+
+.body_left_3_bottom
+{
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*line-height: 25px;*/
+    color: #707070;
+    margin: 10px;
+}
+
+.div_aside_body_left_4  /*왼쪽 바디 4번째 시작*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 830px;
+    margin-top: 15px;
+}
+
+.body_left_4_category   /*추천 구독/자동차/웹툰/패션뷰티...*/
+{
+    list-style: none;
+    display: flex;
+    margin: 20px 20px;
+}
+
+.body_left_4_category li,   /*추천 구독/자동차/웹툰/패션뷰티...*/
+.body_left_4_category a
+{
+    font-weight: 600;
+    font-size: 16px;
+    color: #838383;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#slash
+{
+    color: #e3e5e8;
+}
+
+.body_left_4_category a:hover
+{
+    text-decoration: underline;
+    color: #838383;
+}
+
+.body_left_4_webtoonmenu    /*웹툰홈 요일별웹툰 베스트도전 | 웹소설홈...*/
+{
+    list-style: none;
+    color: black;
+    background-color: #f5f7f8;
+    padding: 12px 20px; /*사이즈 네이버 참고.*/
+    border-radius: 4px; /*사이즈 네이버 참고.*/
+    display: flex;
+    margin: 10px 20px auto;
+}
+
+.body_left_4_webtoonmenu li:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_4_webtoonmenu li /*웹툰홈 요일별웹툰 베스트도전 | 웹소설홈...*/
+{
+    margin: 3px;
+    font-size: 15px;
+}
+
+#일요웹툰   /*일요웹툰*/
+{   /*top, bottom 안먹히므로, inline-block설정 후 적용하기.*/
+    font-weight: bolder;
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.body_left_4_webtoon_thumb_row1, /*웹툰 썸네일*/
+.body_left_4_webtoon_thumb_row2
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10px 30px 10px;
+}
+
+.body_left_4_webtoon_thumb_row1 img,
+.body_left_4_webtoon_thumb_row2 img
+{
+    border-radius: 5px;
+    width: 110px;
+}
+
+.body_left_4_webtoon_thumb_row1 a,
+.body_left_4_webtoon_thumb_row2 a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.body_left_4_webtoon_thumb_row1 a:hover,
+.body_left_4_webtoon_thumb_row2 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_4_webtoon_thumb_row1 img:hover,
+.body_left_4_webtoon_thumb_row2 img:hover
+{
+    width: 110px;
+    height: 140px;
+}
+
+.body_left_4_webtoon_best_view  /*이번주 가장 많이 본 웹툰 | 신작 완결*/
+{
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    margin: 20px auto 20px 20px ;
+}
+
+.body_left_4_webtoon_best_view a    /*이번주 가장 많이 본 웹툰 | 신작 완결*/
+{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.body_left_4_webtoon_best_view_thumb
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10px 30px 10px;
+}
+
+.body_left_4_webtoon_best_view_thumb img
+{
+    border-radius: 5px;
+    width: 110px;
+}
+
+.body_left_4_webtoon_best_view_thumb a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.body_left_4_webtoon_best_view_thumb a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_4_webtoon_best_view_thumb img:hover
+{
+    width: 110px;
+    height: 140px;
+}
+
+.body_left_4_webtoon_series  /*시리즈에디션*/
+{
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    margin: 20px auto 20px 20px ;
+}
+
+.body_left_4_webtoon_series a    /*시리즈에디션*/
+{
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.body_left_4_webtoon_series_thumb
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10px 30px 10px;
+}
+
+.body_left_4_webtoon_series_thumb a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_4_webtoon_series_thumb img
+{
+    border-radius: 5px;
+    width: 110px;
+}
+
+.body_left_4_webtoon_series_thumb a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.body_left_4_webtoon_series_thumb img:hover
+{
+    width: 110px;
+    height: 140px;
+}
+
+.body_left_4_webnovel  /*이번주에 가장 많이 본 웹소설*/
+{
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    margin: 20px auto 20px 20px ;
+}
+
+.body_left_4_webnovel a   /*이번주에 가장 많이 본 웹소설*/
+{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.body_left_4_webnovel_thumb
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10px 30px 10px;
+}
+
+.body_left_4_webnovel_thumb img
+{
+    border-radius: 5px;
+    width: 110px;
+}
+
+.body_left_4_webnovel_thumb a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.body_left_4_webnovel_thumb a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.body_left_4_webnovel_thumb img:hover
+{
+    width: 110px;
+    height: 140px;
+}
+
+.div_aside_body_left_4 hr   /*body_left_4의 <hr>*/
+{
+    height: 1px;
+    width: 785px;
+    background-color: #e3e5e8;
+    border: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+#펼쳐보기   /*body_left_4의 펼쳐보기 윗쪽 <hr>*/
+{
+    height: 1px;
+    margin: 0px 0px 0px 20px;
+    background-color: #e3e5e8;
+    border: 0px;
+}
+
+#drop_webtoon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#drop_webtoon a
+{
+    text-decoration: none;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #404040;
+}
+
+.div_body_right_1   /*body_right_1의 로그인 전체창*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    left: 890px;
+    top: 212px;
+}
+
+.body_right_1_login,
+.body_right_1_category
+{
+    list-style: none;
+}
+
+.body_right_1_login li  /*네이버를 더 안전하고 편리하게 이용하세요*/
+{
+    font-size: 11pt;
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.lgoin_button   /*로그인 클릭 버튼*/
+{
+    background-color: #03c75a;
+    border-radius: 3px;
+    width: 360px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body_right_1_category  /*아이디 찾기 | 비밀번호 찾기 | 회원가입*/
+{
+    font-size: 10pt;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.body_right_1_category a    /*아이디 찾기 | 비밀번호 찾기 | 회원가입 언더라인 삭제*/
+{
+    text-decoration: none;
+    color: #606075;
+}
+
+.body_right_1_category a:hover /*아이디 찾기 | 비밀번호 찾기 | 회원가입 마우스오버 효과*/
+{
+    text-decoration: underline;
+    color: #606075;
+}
+
+
+.body_right_1_login a   /*네이버 로그인 글자 언더라인 제거*/
+{
+    text-decoration: none;
+}
+
+.lgoin_button:hover /*로그인 버튼 hover*/
+{
+    background-color: #17b75e;
+}
+
+#NAVER
+{
+    font-size: 22px;
+    font-weight: bolder;
+    color: white;
+}
+
+#로그인
+{
+    color: white;
+}
+
+.div_aside_body_right_2 img /*body_right_2 광고 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    left: 890px;
+    top: 385px;
+}
+
+.div_aside_body_right_3 img /*body_right_3 광고 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 890px;
+    top: 627px;
+}
+
+.div_aside_body_right_4 img /*body_right_4 요즘 많이 찾는 상품 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    left: 890px;
+    top: 740px;
+}
+
+.div_aside_body_right_5 img /*body_right_5 날씨 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    left: 890px;
+    top: 915px;
+}
+
+.div_aside_body_right_6 img /*body_right_6 증시 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    left: 890px;
+    top: 1160px;
+}
+
+.div_aside_body_right_7 /*body_right_7의 전체 창.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 890px;
+    top: 1405px;
+}
+
+.body_right_7_book  /*body_right_7 독서의 계절이 왔다... 아이콘 및 텍스트 리스트.*/
+{
+    list-style: none;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.body_right_7_book span /*body_right_7 독서의 계절이 왔다, 폰트 스타일 적용.*/
+{
+    font-weight: bolder;
+    color: black;
+}
+
+.body_right_7_book a    /*body_right_7 텍스트 앵커 스타일 적용.*/
+{
+    text-decoration: none;
+    color: #606060;
+}
+
+.body_right_7_book a:hover  /*body_right_7 텍스트 hover적용.*/
+{
+    text-decoration: underline;
+    color: black;
+}
+
+footer  /*bottom 전체.*/
+{
+    width: 1300px;
+    background-color: #f5f6f7;
+    border: 1px solid #ebebeb;
+    margin-top: 60px;
+}
+
+.bottom_1_row1  /*bottom의 첫 번째 행 광고.*/
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.bottom_1_row1 img  /*bottom의 첫 번째 행 광고 이미지.*/
+{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.bottom_1_row1 img:hover
+{
+    width: 148px;
+}
+
+.bottom_1_row1 a    /*bottom의 첫 번째 행 광고 텍스트 앵커.*/
+{
+    text-decoration: none;
+    color: #404040;
+}
+
+.bottom_1_row1 span /*핸드메이드 사막여우... 키링 텍스트 스타일.*/
+{
+    color: black;
+    font-weight: bold;
+}
+
+.bottom_1_row1 span:hover   /*핸드메이드 사막여우... 키링 hover 적용.*/
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.bottom_1_row1 #title   /*유엔난민기구, 홀베리, DAN 24*/
+{
+    border-radius: 5px;
+    background-color: #a0adb2;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 2px;
+}
+
+.bottom_2_row2  /*공지사항, 서비스 전체보기*/
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.bottom_2_row2 a    /*공지사항, 서비스 전체보기 앵커 스타일.*/
+{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.bottom_2_row2 a:hover  /*공지사항, 서비스 전체보기 hover 적용.*/
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.column /*Partners, Developers 2개열로 나열.*/
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+}
+
+.bottom_3_1 /*Partners, Developers, 웨일 및 네이버 아이콘 전체 창.*/
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom_3_row1,
+.bottom_3_row2,
+.bottom_3_row3
+{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.bottom_3_row1 a,
+.bottom_3_row2 a,
+.bottom_3_row3 a
+{
+    color: #404040;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.bottom_3_row1 span,
+.bottom_3_row2 span,
+.bottom_3_row3 span
+{
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+.bottom_3_row1 a:hover,
+.bottom_3_row2 a:hover,
+.bottom_3_row3 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+#l
+{
+    color: #ebebeb;
+}
+
+.bottom_3_row3 img
+{
+    width: 50px;
+    margin-right: 40px;
+}
+
+#icon_a
+{
+    margin-left: 55px;
+}
+
+.bottom_4_ul    /*회사소개 | 인재채용 | 제휴제안...*/
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 70px 0px;
+}
+
+.bottom_4 a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: #404040;
+}
+
+.bottom_4 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+footer hr   /*bottom 각 행의 hr.*/
+{
+    height: 1px;
+    width: 1255px;
+    background-color: #ebebeb;
+    border: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#bold
+{
+    font-weight: bold;
+    color: black;
+}
+
+#mobile
+{
+    display: flex;
+    justify-content: center;
+}
+
+#mobile_fixed
+{
+    width: 210px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #03c75a;
+    position: fixed;
+    bottom: 60px;
+}
+
+#mobile_fixed a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#mobile_fixed a:hover
+{
+    text-decoration: underline;
+    color: white;
+}
+
+#fixed_icons
+{
+    display: flex;
+    justify-content: right;
+}
+
+#up_fixed
+{
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 60px;
+    border-radius: 100px;
+    right: 90px;
+    border: 1px solid #ebebeb;
+}
+
+#settings_fixed
+{
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    border-radius: 100px;
+    border: 1px solid #ebebeb;
+}
+
+#fixed_icons a
+{
+    color: #363940;
+}
