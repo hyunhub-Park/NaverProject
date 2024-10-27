@@ -1,0 +1,496 @@
+/* border-box로 전체 설정 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+body {
+  background-color: rgb(244, 246, 248);
+}
+/* 앵커 타입은 기본적으로 부모객체의 속성 계승 */
+a {
+  text-decoration: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+/* 헤더부분 스타일 */
+/* 해더 네비게이션 바 전체 */
+header nav {
+  background-color: rgb(63, 99, 191);
+  display: flex;
+  height: 52px;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  justify-content: space-between;
+}
+/* 해더 네비게이션바 왼쪽부분 */
+header nav div.nav_left {
+  margin-left: 20%;
+  min-width: 500px;
+}
+header nav div.nav_left div.logo li a svg {
+  position: relative;
+  top: 2px;
+}
+
+header nav div.nav_left ul {
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
+  color: rgb(183, 197, 231);
+  font-size: 18px;
+}
+header nav div.nav_left ul li.head {
+  font-size: 21px;
+  color: white;
+  font-weight: bold;
+}
+/* 해더 네비게이션바 오른쪽 부분 */
+header nav div.nav_right {
+  margin-right: 20%;
+}
+header nav div.nav_right ul {
+  display: flex;
+  align-items: first baseline;
+}
+header nav div.nav_right ul li {
+  margin-right: 15px;
+  color: rgb(253, 253, 253);
+  font-size: 18px;
+}
+header nav div.nav_right li i:hover {
+  color: rgb(184, 197, 230);
+}
+header nav div.nav_right li:nth-child(1):hover span {
+  text-decoration: underline;
+}
+header nav div.nav_right li:nth-child(1) {
+  color: white;
+  background-color: rgb(73, 107, 194);
+  padding: 2px 4px 2px 4px;
+  border: 1px solid rgb(55, 87, 168);
+  font-size: 12px;
+}
+header nav div.nav_right li:nth-child(1) span {
+  font-size: 10px;
+  color: white;
+}
+/* 해더 매뉴부분 스타일 */
+header div.menu {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  height: 46px;
+}
+header div.menu ul {
+  display: flex;
+  font-size: 14px;
+  margin-left: 20%;
+  min-width: 1200px;
+}
+header div.menu ul li {
+  height: 46px;
+  margin: 0 14px 0 0;
+  padding: 0 3px;
+  line-height: 46px;
+  font-weight: 600;
+}
+header div.menu ul li:nth-child(1) {
+  color: rgb(63, 99, 191);
+  border-bottom: 2px solid rgb(63, 99, 191);
+}
+/* 메인부분 스타일 */
+main {
+  margin: 0 20% 0 20%;
+}
+/* 메인 최상단 섹션 nav 날짜*/
+main section.nav {
+  display: flex;
+  padding: 20px 15px 8px 0;
+  font-size: 13px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(130, 134, 145);
+  min-width: 750px;
+  margin-bottom: 16px;
+}
+main section.nav div.section0_right ul {
+  display: flex;
+  font-size: 13px;
+}
+main section.nav div.section0_right ul li {
+  margin-right: 7px;
+  padding-right: 7px;
+  border-right: 1px solid rgb(224, 224, 224);
+  color: rgb(51, 51, 51);
+}
+main section.nav div.section0_right ul li:nth-last-of-type(1) {
+  border-right: none;
+}
+/* 메인 섹션 section1, 2, 3  */
+main section.container {
+  display: flex;
+}
+/* 메인섹션 section1  왼쪽 부분*/
+main section.container section.section1 {
+  display: flex;
+  flex-direction: column;
+}
+/* section의 article들 틀잡기 일괄설정 */
+main section.container section article {
+  border: 1px solid rgb(241, 243, 245);
+  background-color: rgb(255, 255, 255);
+  width: 388.5px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+/* ------------사이드------------ */
+aside article {
+  border: 1px solid rgb(241, 243, 245);
+  background-color: rgb(255, 255, 255);
+  width: 388.5px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+/* section1 article.head 상단 헤드 언론사편집 설정  */
+main section.container section.section1 article.head {
+  display: flex;
+  justify-content: space-between;
+}
+main section.container section.section1 article.head a {
+  font-size: 12px;
+  color: rgb(118, 118, 120);
+}
+/* section1 article.news 상단 헤드 언론사편집 설정  */
+main section.container section.section1 article.news {
+  position: relative;
+}
+main section.container section.section1 article.news div * {
+  margin-right: 6px;
+}
+main section.container section.section1 article.news div.news_head {
+  margin-bottom: 15px;
+}
+
+main section.container section.section1 article.news div.news_head img {
+  /* 로고 설정 */
+  width: 30px;
+  border: 1px solid rgb(130, 134, 145);
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 2px;
+}
+
+main section.container section.section1 article.news div span {
+  position: relative;
+  bottom: 7px;
+}
+main section.container section.section1 article.news div span.head {
+  font-weight: bold;
+}
+main section.container section.section1 article.news div span.date {
+  font-size: 13px;
+  color: rgb(130, 134, 145);
+}
+a.subs {
+  position: absolute;
+  right: 15px;
+  border: 1px solid rgb(73, 120, 244);
+  border-radius: 5px;
+  color: rgb(73, 120, 244);
+  padding: 2px 7px;
+  justify-self: right;
+  font-size: 14px;
+}
+/* section1 article.news div.news_page 뉴스 페이지 설정 */
+
+hr {
+  background: rgb(229, 229, 229);
+  height: 1px;
+  border: 0;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+main section.container section.section1 article.news div.news1 > * {
+  margin-bottom: 20px;
+}
+main section.container section.section1 article.news div.news_page {
+  height: 100px;
+}
+main section.container section.section1 article.news div.news_page a {
+  display: flex;
+}
+main section.container section.section1 article.news div.news_page p span {
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 2줄까지만 표시 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main section.container section.section1 article.news div.news_page p span.gray {
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+  color: rgb(118, 118, 120);
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 최대 2줄까지만 표시 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main section.container section.section1 article.news div.news_page img {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 80px;
+  width: 120px;
+}
+/* 뉴스페이지 하단부 새로보기 */
+div.refresh {
+  border: 1px solid #ddd; /* 테두리 색상 */
+  border-radius: 20px; /* 둥근 테두리 */
+  padding: 8px 16px; /* 버튼 안쪽 여백 */
+  background-color: white; /* 배경색 */
+  color: #333; /* 텍스트 색상 */
+  font-size: 14px; /* 텍스트 크기 */
+  display: inline-flex; /* 아이콘과 텍스트를 수평 정렬 */
+  align-items: center; /* 아이콘과 텍스트를 중앙 정렬 */
+  cursor: pointer; /* 마우스 커서 변경 */
+  position: relative;
+  left: 115px;
+}
+/* section1 article.reporter 기자 페이지 설정 */
+article.reporter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main section.container section.section1 article.reporter h4 i {
+  color: rgb(183, 197, 231);
+  font-size: 10px;
+  border: 1px solid rgb(183, 197, 231);
+  border-radius: 50%;
+  padding: 2px 5px;
+  position: relative;
+  bottom: 2px;
+}
+main section.container section.section1 article.reporter a p {
+  color: rgb(118, 118, 120);
+  font-size: 14px;
+  position: relative;
+}
+main section.container section.section1 article.reporter a div.report {
+  border: 1px solid rgb(239, 239, 239);
+  width: 170px;
+  padding: 0 10px 0 10px;
+  position: relative;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+main section.container section.section1 article.reporter a div.report p {
+  font-size: 15px;
+}
+main section.container section.section1 article.reporter a div.report img.pic {
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  left: -10px;
+}
+main
+  section.container
+  section.section1
+  article.reporter
+  a
+  div.report
+  img.human {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 30px;
+  position: absolute;
+  top: 84px;
+  left: 10px;
+}
+main section.container section.section1 article.reporter a div.report div.sub {
+  margin-top: 20px;
+  border-top: 1px solid rgb(239, 239, 239);
+  margin: 10px -10px;
+  text-align: center;
+  color: rgb(73, 120, 244);
+  padding: 10px 0 5px 0;
+}
+div.fresh {
+  border: 1px solid #ddd; /* 테두리 색상 */
+  border-radius: 20px; /* 둥근 테두리 */
+  padding: 8px 16px; /* 버튼 안쪽 여백 */
+  background-color: white; /* 배경색 */
+  color: #333; /* 텍스트 색상 */
+  font-size: 14px; /* 텍스트 크기 */
+  display: inline-flex; /* 아이콘과 텍스트를 수평 정렬 */
+  align-items: center; /* 아이콘과 텍스트를 중앙 정렬 */
+  cursor: pointer; /* 마우스 커서 변경 */
+  position: relative;
+  left: 115px;
+  margin-top: 10px;
+}
+/* ----------------section2 설정 --------*/
+
+section.section2 article.article1 div.news {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  overflow-x: hidden;
+}
+section.section2 a {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+section.section2 a img {
+  width: 120px;
+  border-radius: 7px 7px 0 0;
+}
+section.section2 div.news a div {
+  text-align: center;
+  width: 120px;
+  background-color: rgb(19, 57, 146);
+  color: white;
+  border-radius: 0 0 7px 7px;
+  padding: 7px 0 7px 0;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+/* section2 언론사별 심층기획 article.article2 */
+section.section2 article.article2 {
+  position: relative;
+}
+section.section2 article.article2 div.title {
+  display: flex;
+  margin-bottom: 7px;
+  margin-top: 15px;
+}
+section.section2 article.article2 div.title img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid rgb(235, 235, 235);
+}
+section.section2 article.article2 div.title div.set {
+  display: flex;
+  flex-direction: column;
+}
+section.section2 article.article2 div.title span.date {
+  font-size: 10px;
+  color: rgb(183, 197, 231);
+}
+section.section2 article.article2 div.title span.sub {
+  position: absolute;
+  right: 0;
+  color: rgb(55, 87, 168);
+}
+div.line {
+  display: flex;
+}
+div.line div {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+div.line div p {
+  text-align: center;
+  width: 120px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 0 0 7px 7px;
+  padding: 7px 5px 7px 5px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+div.line div p.onlyline {
+  text-align: center;
+  width: 120px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 7px 7px 7px 7px;
+  padding: 7px 5px 7px 5px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  height: 130px;
+}
+/*-------------- section3 세로 세번째 라인css --------------------*/
+section.container section.section3 article.moresub div.cont1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+section.container
+  section.section3
+  article.moresub
+  div.cont1
+  input[type="checkbox"] {
+  display: none;
+}
+section.container section.section3 article.moresub div.cont1 label {
+  cursor: pointer;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+section.container section.section3 article.moresub div.cont1 img {
+  border: 1px solid rgb(224, 224, 224);
+  width: 54px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px #444;
+}
+section.container section.section3 article.moresub div.cont1 p {
+  font-size: 13px;
+  text-align: center;
+}
+/*-------------- 사이드 스타일------------- */
+aside article.article1 {
+  width: 160px;
+  position: fixed;
+  right: 10%;
+  top: 110px;
+}
+aside article.article2 {
+  width: 160px;
+  position: fixed;
+  right: 10%;
+  top: 470px;
+}
+aside article ul {
+  flex-direction: column !important;
+}
+aside article li {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+aside article li img {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 50%;
+  margin-bottom: -5px;
+}
+aside article div.subset {
+  border-top: 1px solid rgb(224, 224, 224);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+}
+/* 하단부 스타일 */
+footer article {
+  margin: 20px 20% 20px 20%;
+  font-size: 13px;
+}
