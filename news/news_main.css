@@ -152,6 +152,17 @@ main section.container section article {
   margin-bottom: 10px;
   margin-right: 20px;
 }
+/* ------------사이드------------ */
+aside article {
+  border: 1px solid rgb(241, 243, 245);
+  background-color: rgb(255, 255, 255);
+  width: 388.5px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
 /* section1 article.head 상단 헤드 언론사편집 설정  */
 main section.container section.section1 article.head {
   display: flex;
@@ -367,7 +378,8 @@ section.section2 article.article2 {
 }
 section.section2 article.article2 div.title {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  margin-top: 15px;
 }
 section.section2 article.article2 div.title img {
   width: 37px;
@@ -416,5 +428,69 @@ div.line div p.onlyline {
   margin-bottom: 10px;
   height: 130px;
 }
-/* 사이드 스타일 */
+/*-------------- section3 세로 세번째 라인css --------------------*/
+section.container section.section3 article.moresub div.cont1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+section.container
+  section.section3
+  article.moresub
+  div.cont1
+  input[type="checkbox"] {
+  display: none;
+}
+section.container section.section3 article.moresub div.cont1 label {
+  cursor: pointer;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+section.container section.section3 article.moresub div.cont1 img {
+  border: 1px solid rgb(224, 224, 224);
+  width: 54px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px #444;
+}
+section.container section.section3 article.moresub div.cont1 p {
+  font-size: 13px;
+  text-align: center;
+}
+/*-------------- 사이드 스타일------------- */
+aside article.article1 {
+  width: 160px;
+  position: fixed;
+  right: 10%;
+  top: 110px;
+}
+aside article.article2 {
+  width: 160px;
+  position: fixed;
+  right: 10%;
+  top: 470px;
+}
+aside article ul {
+  flex-direction: column !important;
+}
+aside article li {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+aside article li img {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 50%;
+  margin-bottom: -5px;
+}
+aside article div.subset {
+  border-top: 1px solid rgb(224, 224, 224);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+}
 /* 하단부 스타일 */
+footer article {
+  margin: 20px 20% 20px 20%;
+  font-size: 13px;
+}
