@@ -1,0 +1,286 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header 스타일 */
+  header {
+    background-color: #03c75a;
+    padding: 10px 0;
+  }
+  
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo i {
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .search-bar select,
+  .search-bar input {
+    padding: 8px;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: white;
+    color: #00c73c;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .grid-icon {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  /* Navigation 스타일 */
+  nav {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex: 1;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+  nav ul li a:hover {
+    color: #00c73c;
+  }
+  
+  /* 네비게이션 버튼 스타일 */
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .join-btn,
+  .official-btn {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .join-btn {
+    background-color: #00c73c;
+    color: white;
+    border: none;
+  }
+  
+  .official-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .join-btn:hover,
+  .official-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Hot Topic Section 스타일 */
+  .hot-topic {
+    margin: 40px 0;
+    width: 100vw;
+    background-color: #f5f5f6;
+    padding: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .topic-header-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .topic-header {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Pagination */
+  .pagination {
+    text-align: right;
+  }
+  
+  .page-num {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    color: #333;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  
+  .page-num.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+  }
+  
+  .page-num:hover {
+    background-color: #69707d;
+  }
+  
+  /* 카드 레이아웃 */
+  .topic-cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .card {
+    width: 22%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Footer 스타일 */
+  footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links ul li {
+    margin: 0 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #00c73c;
+  }
+  
+  .footer-copyright {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .footer-copyright span {
+    color: #00c73c;
+    font-weight: bold;
+  }
