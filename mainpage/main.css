@@ -68,6 +68,7 @@ div.head_area
 
 .head_nav_icons_ul  /*메일, 카페, 블로그, 쇼핑... 아이콘*/
 {
+    width: 1300px;  /*화면 크기에 따른 아이콘 고정.*/
     display: flex;
     justify-content: center;
     list-style: none;
@@ -214,12 +215,13 @@ div.head_area
 
 #body_left_2_bottom /*언론사 더보기.*/
 {
+    font-weight: 600;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     /*line-height: 25px;*/
-    color: blueviolet;
+    color: #606060;
     margin: 10px;
 }
 
@@ -285,12 +287,28 @@ div.head_area
 .body_left_3_1_2 a,
 .body_left_3_1_3 a
 {
+    margin-top: 5px;
+    color: black;
     text-decoration-line: none;
+}
+
+.body_left_3_1_1 a:hover,
+.body_left_3_1_2 a:hover,
+.body_left_3_1_3 a:hover
+{
+    text-decoration: underline;
+    color: black;
 }
 
 #body_left_3_2  /*쇼핑MY/리뷰적립/주문/장바구니*/
 {
-    margin: 0px 12px;
+    margin: 0px 12px 10px;
+}
+
+#body_left_3_2 img
+{
+    width: 305px;
+
 }
 
 .body_left_3_3 /*웨스턴부츠 광고*/
@@ -303,6 +321,7 @@ div.head_area
 
 .body_left_3_3 img  /*웨스턴부츠 광고*/
 {
+    width: 300px;
     border: 1px solid #f5f7f8;
     border-radius: 3px;
 }
@@ -312,10 +331,17 @@ div.head_area
     margin-left: 10px;
 }
 
-.body_left_3_3 a
+.body_left_3_3 a    /*쌀쌀해지는 날씨 데일리 인기부츠!*/
 {
+    color: black;
     text-decoration: none;
     padding-left: 15px;
+}
+
+.body_left_3_3 a:hover
+{
+    text-decoration: underline;
+    color: black;
 }
 
 .body_left_3_4_row1,
@@ -325,6 +351,19 @@ div.head_area
     display: flex;
     margin: 20px 0px 0px 10px;
     
+}
+
+.body_left_3_4_row1 a,
+.body_left_3_4_row2 a
+{
+    color: black;
+}
+
+.body_left_3_4_row1 a:hover,
+.body_left_3_4_row2 a:hover
+{
+    text-decoration: underline;
+    color: black;
 }
 
 .body_left_3_4_row1 img,
@@ -356,6 +395,7 @@ div.head_area
 
 .body_left_3_5  /*오늘의 혜택*/
 {
+    font-weight: bold;
     list-style: none;
     background-color: #f5f7f8;
     display: flex;
@@ -366,8 +406,14 @@ div.head_area
 
 .body_left_3_5 a    /*속보! 사뿐, 슈펜...*/
 {
+    font-weight: 200;
     text-decoration: none;
     margin-left: 15px;
+}
+
+.body_left_3_5 a:hover
+{
+    text-decoration: underline;
 }
 
 .div_aside_body_left_3 hr /*쇼핑아이템 더보기 윗줄*/
@@ -380,12 +426,13 @@ div.head_area
 
 .body_left_3_bottom
 {
+    font-weight: 600;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     /*line-height: 25px;*/
-    color: blueviolet;
+    color: #707070;
     margin: 10px;
 }
 
@@ -407,20 +454,40 @@ div.head_area
 .body_left_4_category li,   /*추천 구독/자동차/웹툰/패션뷰티...*/
 .body_left_4_category a
 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #838383;
     text-decoration: none;
     margin-left: 2px;
     margin-right: 2px;
 }
 
+#slash
+{
+    color: #e3e5e8;
+}
+
+.body_left_4_category a:hover
+{
+    text-decoration: underline;
+    color: #838383;
+}
+
 .body_left_4_webtoonmenu    /*웹툰홈 요일별웹툰 베스트도전 | 웹소설홈...*/
 {
     list-style: none;
-    color: blueviolet;
+    color: black;
     background-color: #f5f7f8;
     padding: 12px 20px; /*사이즈 네이버 참고.*/
     border-radius: 4px; /*사이즈 네이버 참고.*/
     display: flex;
     margin: 10px 20px auto;
+}
+
+.body_left_4_webtoonmenu li:hover
+{
+    text-decoration: underline;
+    color: black;
 }
 
 .body_left_4_webtoonmenu li /*웹툰홈 요일별웹툰 베스트도전 | 웹소설홈...*/
@@ -431,6 +498,7 @@ div.head_area
 
 #일요웹툰   /*일요웹툰*/
 {   /*top, bottom 안먹히므로, inline-block설정 후 적용하기.*/
+    font-weight: bolder;
     display: inline-block;
     margin: 20px 20px;
 }
@@ -454,7 +522,15 @@ div.head_area
 .body_left_4_webtoon_thumb_row1 a,
 .body_left_4_webtoon_thumb_row2 a
 {
+    color: black;
     text-decoration: none;
+}
+
+.body_left_4_webtoon_thumb_row1 a:hover,
+.body_left_4_webtoon_thumb_row2 a:hover
+{
+    text-decoration: underline;
+    color: black;
 }
 
 .body_left_4_webtoon_thumb_row1 img:hover,
@@ -466,9 +542,10 @@ div.head_area
 
 .body_left_4_webtoon_best_view  /*이번주 가장 많이 본 웹툰 | 신작 완결*/
 {
+    font-weight: bolder;
     list-style: none;
     display: flex;
-    margin: 30px auto 20px 20px ;
+    margin: 20px auto 20px 20px ;
 }
 
 .body_left_4_webtoon_best_view a    /*이번주 가장 많이 본 웹툰 | 신작 완결*/
@@ -494,9 +571,14 @@ div.head_area
 .body_left_4_webtoon_best_view_thumb a
 {
     text-decoration: none;
+    color: black;
 }
 
-
+.body_left_4_webtoon_best_view_thumb a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
 
 .body_left_4_webtoon_best_view_thumb img:hover
 {
@@ -506,13 +588,15 @@ div.head_area
 
 .body_left_4_webtoon_series  /*시리즈에디션*/
 {
+    font-weight: bold;
     list-style: none;
     display: flex;
-    margin: 30px auto 20px 20px ;
+    margin: 20px auto 20px 20px ;
 }
 
 .body_left_4_webtoon_series a    /*시리즈에디션*/
 {
+    color: black;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -525,6 +609,12 @@ div.head_area
     margin: 0px 10px 30px 10px;
 }
 
+.body_left_4_webtoon_series_thumb a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
 .body_left_4_webtoon_series_thumb img
 {
     border-radius: 5px;
@@ -533,6 +623,7 @@ div.head_area
 
 .body_left_4_webtoon_series_thumb a
 {
+    color: black;
     text-decoration: none;
 }
 
@@ -544,9 +635,10 @@ div.head_area
 
 .body_left_4_webnovel  /*이번주에 가장 많이 본 웹소설*/
 {
+    font-weight: bolder;
     list-style: none;
     display: flex;
-    margin: 30px auto 20px 20px ;
+    margin: 20px auto 20px 20px ;
 }
 
 .body_left_4_webnovel a   /*이번주에 가장 많이 본 웹소설*/
@@ -571,7 +663,14 @@ div.head_area
 
 .body_left_4_webnovel_thumb a
 {
+    color: black;
     text-decoration: none;
+}
+
+.body_left_4_webnovel_thumb a:hover
+{
+    text-decoration: underline;
+    color: black;
 }
 
 .body_left_4_webnovel_thumb img:hover
@@ -594,7 +693,7 @@ div.head_area
 #펼쳐보기   /*body_left_4의 펼쳐보기 윗쪽 <hr>*/
 {
     height: 1px;
-    margin: 0px;
+    margin: 0px 0px 0px 20px;
     background-color: #e3e5e8;
     border: 0px;
 }
@@ -622,7 +721,7 @@ div.head_area
     width: 400px;
     height: 160px;
     position: absolute;
-    left: 880px;
+    left: 890px;
     top: 212px;
 }
 
@@ -696,11 +795,359 @@ div.head_area
     color: white;
 }
 
+.div_aside_body_right_2 img /*body_right_2 광고 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    left: 890px;
+    top: 385px;
+}
 
+.div_aside_body_right_3 img /*body_right_3 광고 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 890px;
+    top: 627px;
+}
 
+.div_aside_body_right_4 img /*body_right_4 요즘 많이 찾는 상품 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    left: 890px;
+    top: 740px;
+}
 
+.div_aside_body_right_5 img /*body_right_5 날씨 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    left: 890px;
+    top: 915px;
+}
 
+.div_aside_body_right_6 img /*body_right_6 증시 이미지.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    left: 890px;
+    top: 1160px;
+}
 
+.div_aside_body_right_7 /*body_right_7의 전체 창.*/
+{
+    border: 1px solid #e3e5e8;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 890px;
+    top: 1405px;
+}
 
+.body_right_7_book  /*body_right_7 독서의 계절이 왔다... 아이콘 및 텍스트 리스트.*/
+{
+    list-style: none;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 14px;
+}
 
+.body_right_7_book span /*body_right_7 독서의 계절이 왔다, 폰트 스타일 적용.*/
+{
+    font-weight: bolder;
+    color: black;
+}
+
+.body_right_7_book a    /*body_right_7 텍스트 앵커 스타일 적용.*/
+{
+    text-decoration: none;
+    color: #606060;
+}
+
+.body_right_7_book a:hover  /*body_right_7 텍스트 hover적용.*/
+{
+    text-decoration: underline;
+    color: black;
+}
+
+footer  /*bottom 전체.*/
+{
+    width: 1300px;
+    background-color: #f5f6f7;
+    border: 1px solid #ebebeb;
+    margin-top: 60px;
+}
+
+.bottom_1_row1  /*bottom의 첫 번째 행 광고.*/
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.bottom_1_row1 img  /*bottom의 첫 번째 행 광고 이미지.*/
+{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.bottom_1_row1 img:hover
+{
+    width: 148px;
+}
+
+.bottom_1_row1 a    /*bottom의 첫 번째 행 광고 텍스트 앵커.*/
+{
+    text-decoration: none;
+    color: #404040;
+}
+
+.bottom_1_row1 span /*핸드메이드 사막여우... 키링 텍스트 스타일.*/
+{
+    color: black;
+    font-weight: bold;
+}
+
+.bottom_1_row1 span:hover   /*핸드메이드 사막여우... 키링 hover 적용.*/
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.bottom_1_row1 #title   /*유엔난민기구, 홀베리, DAN 24*/
+{
+    border-radius: 5px;
+    background-color: #a0adb2;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 2px;
+}
+
+.bottom_2_row2  /*공지사항, 서비스 전체보기*/
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.bottom_2_row2 a    /*공지사항, 서비스 전체보기 앵커 스타일.*/
+{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.bottom_2_row2 a:hover  /*공지사항, 서비스 전체보기 hover 적용.*/
+{
+    text-decoration: underline;
+    color: black;
+}
+
+.column /*Partners, Developers 2개열로 나열.*/
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+}
+
+.bottom_3_1 /*Partners, Developers, 웨일 및 네이버 아이콘 전체 창.*/
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom_3_row1,
+.bottom_3_row2,
+.bottom_3_row3
+{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.bottom_3_row1 a,
+.bottom_3_row2 a,
+.bottom_3_row3 a
+{
+    color: #404040;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.bottom_3_row1 span,
+.bottom_3_row2 span,
+.bottom_3_row3 span
+{
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+.bottom_3_row1 a:hover,
+.bottom_3_row2 a:hover,
+.bottom_3_row3 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+#l
+{
+    color: #ebebeb;
+}
+
+.bottom_3_row3 img
+{
+    width: 50px;
+    margin-right: 40px;
+}
+
+#icon_a
+{
+    margin-left: 55px;
+}
+
+.bottom_4_ul    /*회사소개 | 인재채용 | 제휴제안...*/
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 70px 0px;
+}
+
+.bottom_4 a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: #404040;
+}
+
+.bottom_4 a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+footer hr   /*bottom 각 행의 hr.*/
+{
+    height: 1px;
+    width: 1255px;
+    background-color: #ebebeb;
+    border: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#bold
+{
+    font-weight: bold;
+    color: black;
+}
+
+#mobile
+{
+    display: flex;
+    justify-content: center;
+}
+
+#mobile_fixed
+{
+    width: 210px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #03c75a;
+    position: fixed;
+    bottom: 60px;
+}
+
+#mobile_fixed a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#mobile_fixed a:hover
+{
+    text-decoration: underline;
+    color: white;
+}
+
+#fixed_icons
+{
+    display: flex;
+    justify-content: right;
+}
+
+#up_fixed
+{
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 60px;
+    border-radius: 100px;
+    right: 90px;
+    border: 1px solid #ebebeb;
+}
+
+#settings_fixed
+{
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    border-radius: 100px;
+    border: 1px solid #ebebeb;
+}
+
+#fixed_icons a
+{
+    color: #363940;
+}
 
