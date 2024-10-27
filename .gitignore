@@ -46,7 +46,3 @@ _testmain.go
 #*.png
 #*.jpeg
 #*.psd
-
-#image folder
-#미디어는 모두 ignore됨.
-media/
