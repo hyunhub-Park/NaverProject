@@ -192,7 +192,7 @@ main section.container section.section1 article.news div span.date {
   font-size: 13px;
   color: rgb(130, 134, 145);
 }
-main section.container section.section1 article.news div a.subs {
+a.subs {
   position: absolute;
   right: 15px;
   border: 1px solid rgb(73, 120, 244);
@@ -200,6 +200,7 @@ main section.container section.section1 article.news div a.subs {
   color: rgb(73, 120, 244);
   padding: 2px 7px;
   justify-self: right;
+  font-size: 14px;
 }
 /* section1 article.news div.news_page 뉴스 페이지 설정 */
 
@@ -288,7 +289,6 @@ main section.container section.section1 article.reporter a div.report {
   position: relative;
   border-radius: 12px;
   margin-top: 15px;
-  margin-bottom: ;
 }
 main section.container section.section1 article.reporter a div.report p {
   font-size: 15px;
@@ -320,7 +320,7 @@ main section.container section.section1 article.reporter a div.report div.sub {
   color: rgb(73, 120, 244);
   padding: 10px 0 5px 0;
 }
-article.reporter div.fresh {
+div.fresh {
   border: 1px solid #ddd; /* 테두리 색상 */
   border-radius: 20px; /* 둥근 테두리 */
   padding: 8px 16px; /* 버튼 안쪽 여백 */
@@ -334,7 +334,8 @@ article.reporter div.fresh {
   left: 115px;
   margin-top: 10px;
 }
-/* section2 설정 */
+/* ----------------section2 설정 --------*/
+
 section.section2 article.article1 div.news {
   display: flex;
   flex-direction: row;
@@ -350,7 +351,7 @@ section.section2 a img {
   width: 120px;
   border-radius: 7px 7px 0 0;
 }
-section.section2 a div {
+section.section2 div.news a div {
   text-align: center;
   width: 120px;
   background-color: rgb(19, 57, 146);
@@ -359,6 +360,61 @@ section.section2 a div {
   padding: 7px 0 7px 0;
   font-size: 13px;
   margin-bottom: 10px;
+}
+/* section2 언론사별 심층기획 article.article2 */
+section.section2 article.article2 {
+  position: relative;
+}
+section.section2 article.article2 div.title {
+  display: flex;
+  margin-bottom: 5px;
+}
+section.section2 article.article2 div.title img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid rgb(235, 235, 235);
+}
+section.section2 article.article2 div.title div.set {
+  display: flex;
+  flex-direction: column;
+}
+section.section2 article.article2 div.title span.date {
+  font-size: 10px;
+  color: rgb(183, 197, 231);
+}
+section.section2 article.article2 div.title span.sub {
+  position: absolute;
+  right: 0;
+  color: rgb(55, 87, 168);
+}
+div.line {
+  display: flex;
+}
+div.line div {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+div.line div p {
+  text-align: center;
+  width: 120px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 0 0 7px 7px;
+  padding: 7px 5px 7px 5px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+div.line div p.onlyline {
+  text-align: center;
+  width: 120px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 7px 7px 7px 7px;
+  padding: 7px 5px 7px 5px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  height: 130px;
 }
 /* 사이드 스타일 */
 /* 하단부 스타일 */
