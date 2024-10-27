@@ -1,0 +1,206 @@
+/* border-box로 전체 설정 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+button:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  /* 기본 체크박스 숨기기 */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(143, 143, 143);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4caf50; /* 체크 시 배경색 */
+  border-color: #4caf50;
+}
+
+input[type="checkbox"]:checked::after {
+  /* 체크된 상태의 표시 */
+  content: "✓";
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: -2px;
+  left: 4px;
+}
+/* 앵커 타입은 기본적으로 부모객체의 속성 계승 */
+a {
+  text-decoration: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+main > * {
+  margin-bottom: 13px;
+}
+/* header  로고, 언어선택부분*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header div.logo {
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+/* 언어선택 */
+header div.len {
+  align-self: flex-end;
+  margin-top: 20px;
+  padding: 4px 15px 6px 8px;
+}
+header div.len select {
+  padding: 4px 10px 6px 4px;
+  text-align: center;
+  border: 1px solid rgb(158, 158, 158);
+  font-size: 12.5px;
+}
+header div.len select option {
+  text-align: start;
+}
+/* main의 로그인 방법선택부분 */
+
+main section.login article.choice ul {
+  font-size: 16px;
+}
+main section.login article.choice ul li a {
+  display: inline-block;
+  padding: 17px 30px 5px 30px;
+}
+main section.login article.choice ul li {
+  border: 1px solid rgb(225, 227, 229);
+  border-radius: 12px;
+  background-color: rgb(245, 246, 247);
+  border-collapse: collapse;
+  width: 170px;
+}
+
+main section.login article.choice ul li:nth-child(1) {
+  border-radius: 12px 12px 0px 0;
+  position: relative;
+  margin-right: -1px;
+  color: rgb(143, 143, 143);
+}
+main section.login article.choice ul li:nth-child(2) {
+  border-radius: 12px 12px 12px 0px;
+  color: rgb(143, 143, 143);
+}
+main section.login article.choice ul li:nth-child(3) {
+  position: relative;
+  border-bottom: none;
+  background-color: white;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 12px;
+  margin-right: -1px;
+}
+main section.login article.choice ul li:nth-child(3) i {
+  color: rgb(55, 186, 123);
+}
+/* 로그인 정보 입력부분 */
+main section.login article.input {
+  position: relative;
+  bottom: 10px;
+  border: 1px solid rgb(225, 227, 229);
+  border-top: none;
+  width: 508px;
+  height: 276px;
+  justify-self: center;
+  padding: -5px;
+  border-radius: 0 0 12px 12px;
+  padding: 24px;
+}
+/* 로그인 정보 입력부분 설명부 */
+main section.login article.input div.int {
+  margin: 30px 0 28px 0;
+}
+main section.login article.input div.int span.green {
+  color: rgb(9, 170, 92);
+  font-size: 15px;
+}
+main section.login article.input div.int span.qu {
+  display: inline-block;
+  font-size: 10px;
+  background-color: rgb(143, 143, 143);
+  border-radius: 50%;
+  width: 13px;
+  color: white;
+}
+/* 로그인 정보 입력부분 인증번호 입력 */
+main section.login article.input input[type="text"] {
+  text-align: start;
+  border: 1px solid rgb(178, 178, 178);
+  height: 50px;
+  width: 458px;
+  font-size: 16px;
+  padding: 5px;
+  color: rgb(158, 158, 158);
+  margin-bottom: 4.5px;
+  border-radius: 8px;
+  text-align: center;
+}
+/* 로그인 정보 로그인 버튼 */
+main section.login article.input button {
+  width: 458px;
+  height: 50px;
+  border: none;
+  background-color: rgb(9, 170, 92);
+  color: white;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+}
+/* 로그인창 하단부 회원가입 네비게이션 바 main_nav */
+main nav.main_nav {
+  margin-bottom: 50px;
+}
+main nav.main_nav ul li {
+  font-size: 13px;
+  color: rgb(158, 158, 158);
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgb(178, 178, 178);
+}
+main nav.main_nav ul li:nth-last-child(1) {
+  border-right: none;
+}
+/* main 광고부분 */
+section.add {
+  margin-bottom: 50px;
+}
+/* footer 이용약관, 등등 section.notice */
+footer section.notice {
+  margin-bottom: 10px;
+}
+footer section.notice ul li {
+  font-size: 12px;
+  color: rgb(158, 158, 158);
+  margin-right: 7px;
+  padding-right: 7px;
+  border-right: 1px solid rgb(178, 178, 178);
+}
+footer section.notice ul li:nth-last-child(1) {
+  border-right: none;
+}
+footer section.copyright {
+  font-size: 12px;
+  color: rgb(143, 143, 143);
+  margin-bottom: 30px;
+}
+footer section.copyright strong {
+  color: rgb(100, 100, 100);
+}

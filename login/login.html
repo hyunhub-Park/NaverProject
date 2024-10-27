@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/nav_tap.png" />
+    <link rel="apple-touch-icon" href="./img/nav_tap.png" />
+    <title>네이버 : 로그인</title>
+
+    <link rel="stylesheet" href="login_style.css" />
+    <script src="login_js.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6ff644124c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- 언어선택 -->
+      <div class="len">
+        <select name="len" id="len">
+          <option value="len">한국어</option>
+          <option value="len">English</option>
+        </select>
+      </div>
+      <div class="logo">
+        <a href="#"> <img src="./img/naver.svg" alt="" width="155px" /></a>
+      </div>
+    </header>
+    <main>
+      <!-- 로그인창 -->
+      <section class="login">
+        <!-- 로그인방법 선택창 -->
+        <article class="choice">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                ID/전화번호</a
+              >
+            </li>
+            <li>
+              <a href="./login_sec1.html"
+                ><i class="fa-regular fa-square-check"></i> 일회용 번호</a
+              >
+            </li>
+            <li>
+              <a href="./login_sec2.html"
+                ><i class="fa-solid fa-qrcode"></i> QR 코드</a
+              >
+            </li>
+          </ul>
+        </article>
+        <!-- 로그인 입력창 -->
+        <article class="input">
+          <form action="#" method="post">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  name="id"
+                  id="id"
+                  placeholder="아이디 또는 전화번호"
+                />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  name="psw"
+                  id="psw"
+                  placeholder="비밀번호"
+                />
+              </li>
+            </ul>
+            <!-- 상태유지 -->
+            <div class="maint">
+              <input type="checkbox" name="maint" id="maint" />
+              <label for="maint">로그인 상태 유지</label>
+            </div>
+            <!-- 로그인 버튼 -->
+            <button type="submit">로그인</button>
+          </form>
+        </article>
+      </section>
+      <!-- 찾기, 회원가입 네비게이션바 -->
+      <nav class="main_nav">
+        <ul>
+          <li><a href="#">비밀번호 찾기</a></li>
+          <li>아이디 찾기</li>
+          <li>회원가입</li>
+        </ul>
+      </nav>
+      <section class="add">
+        <img src="./img/add.png" alt="add" width="508px" />
+      </section>
+    </main>
+    <footer>
+      <section class="notice">
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">책임의 한계와 법적고지</a></li>
+          <li><a href="#">회원정보 고객센터</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <img src="./img/naver.svg" alt="" height="13px" />
+        <span
+          >Copyright <strong>© NAVER Corp.</strong> All Rights Reserved.</span
+        >
+      </section>
+    </footer>
+  </body>
+</html>
