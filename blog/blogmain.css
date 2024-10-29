@@ -132,10 +132,16 @@ nav ul li a {
 nav ul li a:hover {
   color: #00c73c;
 }
+.nav-menu{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 /* 네비게이션 버튼 부분 */
 .nav-buttons {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin-right: 20px;
 }
@@ -258,9 +264,14 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+.container-center {
+  padding: 10px;
+}
+
 .main_aside {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 section.main_nav {
@@ -409,14 +420,17 @@ section.login p {
 }
 
 section.login img {
-  width: 260px;
+  width: 240px;
 }
 
 .login-menu {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px; 
   padding-top: 5px;
+  margin: 0 auto;
+  max-width: 220px; 
 }
 .login-menu a p {
   font-size: small;
@@ -430,7 +444,7 @@ section.login img {
 }
 
 .login_menu p {
-  padding: 5px 15px;
+  padding: 5px 10px;
 }
 
 section.banner img {
@@ -443,13 +457,12 @@ section.banner img {
 }
 
 .banner-text img {
-  height: 90px;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgb(202, 191, 191);
+  padding: 5px;
+  height: 80px; 
 }
 
 .banner-text a {
-  height: 90px;
+  height: 80px;
 }
 
 .notice {
@@ -472,6 +485,11 @@ section.banner img {
   display: flex;
   flex-direction: column;
   border: 0px;
+}
+
+.notice,
+.customer-center {
+  padding: 10px 10px; 
 }
 
 .customer-center a {
